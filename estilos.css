@@ -1,0 +1,29 @@
+body{
+    background-color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    margin: 0px;
+    margin-top: -10px;
+    word-spacing: 1px;
+    
+}
+#Titulo{
+    background: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 150;
+    text-align: center;
+    margin-bottom: 1px;
+}
+#subtitulo{
+    background: yellowgreen;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 75;
+    text-align: center;
+    margin-bottom: 1px;
+}
+#imagen{
+    background-color: yellow;
+    align-items: center;
+    border-color: yellow;
+
+}
