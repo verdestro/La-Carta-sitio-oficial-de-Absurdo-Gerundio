@@ -1,29 +1,34 @@
 body{
     background-color: brown;
+    color:white;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
     margin: 0px;
     margin-top: -10px;
+    margin-bottom: -10px;
     word-spacing: 1px;
     
 }
 #Titulo{
+    color:black;
     background: green;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 150;
     text-align: center;
-    margin-bottom: 1px;
+    margin-bottom: 0px;
+    margin-top: 1px;
 }
 #subtitulo{
+    color:black;
     background: yellowgreen;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 75;
     text-align: center;
-    margin-bottom: 1px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 #imagen{
-    background-color: yellow;
-    align-items: center;
-    border-color: yellow;
-
+    display: flex;
+    justify-content: center;
+    margin:10px;
 }
