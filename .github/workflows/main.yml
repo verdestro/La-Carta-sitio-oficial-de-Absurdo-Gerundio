@@ -1,4 +1,21 @@
-name: Generate sitemap
-uses: guimauvedigital/generate-sitemap@v1
-with:
-  base_url: "https://verdestro.github.io/La-Carta-sitio-oficial-de-Absurdo-Gerundio/"
+name: Sitemap
+
+# Define cuándo se ejecutará el workflow (por ejemplo, al hacer push a la rama main)
+on:
+  push:
+    branches:
+      - main
+jobs:
+  mi-trabajo:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Paso 1: Siempre es recomendable descargar primero el código de tu repositorio
+      - name: GitHub Pages Sitemap Generator
+        uses: nathanfallet/generate-sitemap@v1.0.0
+
+      # Paso 2: La acción que obtuviste del Marketplace
+      - name: Generate sitemap
+        uses: guimauvedigital/generate-sitemap@v1
+        with:
+          base_url: "https://verdestro.github.io/La-Carta-sitio-oficial-de-Absurdo-Gerundio/"
