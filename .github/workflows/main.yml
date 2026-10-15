@@ -1,2 +1,4 @@
-- name: GitHub Pages Sitemap Generator
-  uses: nathanfallet/generate-sitemap@v1.0.0
+- name: Generate sitemap
+  uses: guimauvedigital/generate-sitemap@v1
+  with:
+    base_url: "https://verdestro.github.io/La-Carta-sitio-oficial-de-Absurdo-Gerundio/"
