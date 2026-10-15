@@ -1,0 +1,2 @@
+- name: GitHub Pages Sitemap Generator
+  uses: nathanfallet/generate-sitemap@v1.0.0
