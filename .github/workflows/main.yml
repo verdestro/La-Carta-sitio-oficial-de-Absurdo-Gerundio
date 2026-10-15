@@ -1,21 +1,23 @@
 name: Sitemap
 
-# Define cuándo se ejecutará el workflow (por ejemplo, al hacer push a la rama main)
 on:
   push:
     branches:
       - main
+
 jobs:
   mi-trabajo:
     runs-on: ubuntu-latest
 
     steps:
-      # Paso 1: Siempre es recomendable descargar primero el código de tu repositorio
-      - name: GitHub Pages Sitemap Generator
-        uses: nathanfallet/generate-sitemap@v1.0.0
+      # 1. Paso obligatorio: Descargar el código de tu repositorio para que la acción pueda leerlo
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      # Paso 2: La acción que obtuviste del Marketplace
+      # 2. Generar el sitemap usando la acción de Guimauve Digital
       - name: Generate sitemap
         uses: guimauvedigital/generate-sitemap@v1
         with:
           base_url: "https://verdestro.github.io/La-Carta-sitio-oficial-de-Absurdo-Gerundio/"
+          output_path: "public/sitemap.xml"
+          input_dir: "public"
